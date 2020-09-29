@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakeApplication">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.umaradkhamov.signup.Appointment">
+
+        <TextView
+            android:id="@+id/app_serviceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Application"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="8dp"
+            android:text="Selected Residence"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/applicationaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="8dp"
+            android:text="address"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            android:textStyle="normal" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="42dp"
+            android:layout_marginTop="20dp"
+            >
+            <Button
+                android:id="@+id/appDateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:text="Select Date" />
+
+            <TextView
+                android:id="@+id/appDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:text="yyyy/mm/dd" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitApplication"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:text="Submit"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+
+
+    </LinearLayout>
+</ScrollView>

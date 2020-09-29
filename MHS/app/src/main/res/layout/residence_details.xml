@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResidenceDetails">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mhs.ResidenceDetails">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/numOfUnitdesc"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Number of unit"
+            android:textColor="@color/colorBlack"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+        <TextView
+            android:id="@+id/numOfUnit"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="11dp"
+            android:text="Description"
+            android:textColor="@color/colorBlack"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numOfUnitdesc" />
+
+        <TextView
+            android:id="@+id/sizePerUnitdesc"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Size per unit"
+            android:textColor="@color/colorBlack"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numOfUnit" />
+
+        <TextView
+            android:id="@+id/sizePerUnit"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Description"
+            android:textColor="@color/colorBlack"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sizePerUnitdesc" />
+
+        <TextView
+            android:id="@+id/monthlyRentaldesc"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Monthly rental"
+            android:textColor="@color/colorBlack"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sizePerUnit" />
+
+        <TextView
+            android:id="@+id/monthlyRental"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Description"
+            android:textColor="@color/colorBlack"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/monthlyRentaldesc" />
+
+
+        <Button
+            android:id="@+id/applyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginRight="45dp"
+            android:background="@color/colorPrimary"
+            android:text="Apply"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/monthlyRental" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

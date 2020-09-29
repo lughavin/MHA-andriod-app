@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".UpdateResidence">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.umaradkhamov.signup.SignUpCustomer">
+
+        <EditText
+            android:id="@+id/AdressET"
+            android:layout_width="match_parent"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            />
+
+
+
+        <EditText
+            android:id="@+id/NumOfUnitET"
+            android:layout_width="match_parent"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:ems="10"
+            android:hint="Number of Unit"
+            android:inputType="number"/>
+
+
+
+        <EditText
+            android:id="@+id/SizePerUnitET"
+            android:layout_width="match_parent"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:ems="10"
+            android:hint="Size Per Unit"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/MonthlyRentalET"
+            android:layout_width="match_parent"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:ems="10"
+            android:hint="Monthly Rental"
+            android:inputType="number" />
+
+
+        <Button
+            android:id="@+id/updateResidence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="42dp"
+            android:background="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            android:text="Update"
+            />
+
+        <Button
+            android:id="@+id/deleteResidence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="42dp"
+            android:background="@color/colorRed"
+            android:textColor="@color/colorWhite"
+            android:text="Delete"
+            />
+
+    </LinearLayout>
+</ScrollView>

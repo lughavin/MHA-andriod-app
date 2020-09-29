@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.umaradkhamov.signup.SignUpCustomer">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="34dp"
+            android:src="@drawable/logo"/>
+
+
+
+        <EditText
+            android:id="@+id/CustUsernameET"
+            android:layout_width="match_parent"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            />
+
+
+
+        <EditText
+            android:id="@+id/CustPasswordET"
+            android:layout_width="match_parent"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/CustFullNameET"
+            android:layout_width="match_parent"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName" />
+
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/monthlyIncome"
+            android:layout_width="match_parent"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:ems="10"
+            android:hint="Monthly Income"
+            android:inputType="number" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioUsderType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="Btn_visibilty"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioHouseingOfficer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Btn_visibilty"
+                    android:text="Houseing Officer"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioApplicant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:checked="true"
+                    android:onClick="Btn_visibilty"
+                    android:text="Applicant"
+                    android:textSize="16sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/CustRegisterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="42dp"
+            android:background="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            android:text="Sign Up"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

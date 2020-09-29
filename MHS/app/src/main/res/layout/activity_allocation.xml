@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Allocation">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:text="Make Allocation"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="388dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:layout_editor_absoluteX="23dp">
+
+        <Button
+            android:id="@+id/appDateBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:background="@color/colorPrimary"
+            android:text="Select Date"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/appDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="yyyy/mm/dd"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="66dp"
+        android:text="Status:"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+
+    <ImageView
+        android:id="@+id/status"
+        android:layout_width="30dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/arrow"
+        android:text="Allocate"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+    <TextView
+        android:id="@+id/tvText2"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="66dp"
+        android:text="Duration:"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status" />
+
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status" />
+
+
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="194dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="44dp"
+        android:text=""
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+    <ImageView
+        android:id="@+id/duration"
+        android:layout_width="30dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/arrow"
+        android:text="duration"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status" />
+
+    <TextView
+        android:id="@+id/selectUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="223dp"
+        android:text="Select unit"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duration" />
+
+    <Spinner
+        android:id="@+id/unitSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="42dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@+id/selectUnit" />
+
+
+
+    <Button
+        android:id="@+id/allocatebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="45dp"
+        android:background="@color/colorPrimary"
+        android:text="Submit"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectUnit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
